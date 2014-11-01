@@ -2,7 +2,7 @@ Package.describe({
   name: 'smartbox-theme',
   summary: 'Smartbox theme for meteor',
   version: '1.0.0',
-  git: ' /* Fill me in! */ '
+  git: 'https://github.com/NitroLabs/meteor-smartbox-theme.git'
 });
 
 Package.onUse(function(api) {
