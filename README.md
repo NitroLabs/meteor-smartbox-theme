@@ -20,8 +20,8 @@ See meteor-smart-box demo for example implimentation.
 
 Requirements
 ------------
-Iron:Router@1.0.0
-Jquery (Meteor core)
+* Iron:Router@1.0.0
+* Jquery (Meteor core)
 
 
 
