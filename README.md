@@ -10,11 +10,11 @@ Installation
 This theme is only made available privately, as we do not
 own the extended licence from themeforest.
 
-``sh 
+```sh 
 	cd packages 
  	git clone https://github.com/NitroLabs/meteor-smartbox-theme.git
 	meteor add smartbox-theme
-``
+```
 
 See meteor-smart-box demo for example implimentation.
 
