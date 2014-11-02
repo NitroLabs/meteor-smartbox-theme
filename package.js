@@ -18,6 +18,7 @@ Package.onUse(function(api) {
   api.use('jquery');
   api.use('iron:router');
   api.addFiles("assets/javascripts/bootstrap.js","client");
+  api.addFiles("assets/javascripts/jquery.waitUntilExists.js","client");
   api.addFiles("assets/javascripts/jquery.flexslider-min.js","client");
   api.addFiles("assets/javascripts/jquery.tweet.js","client");
   api.addFiles("assets/javascripts/jquery.fancybox.pack.js","client");

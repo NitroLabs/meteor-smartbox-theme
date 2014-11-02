@@ -4,53 +4,22 @@
     // whenever the the page reloads
     Router.configure({
         onAfterAction:function(){
-            // Wait for Router to render the page
-            setTimeout(function(){
-                hideBar();
-                backgoundInit();
-                portfolioHovers();
-                portfolioFilters();
-                iconHovers();
-                setupContactForm();
-                createTwitter();
-                fancyboxInit();
-                flexInit();
-            },0);
+            hideBar();
+            backgoundInit();
+            portfolioHovers();
+            portfolioFilters();
+            iconHovers();
+            setupContactForm();
+            internetExplorerInit()
+            createTwitter();
+            fancyboxInit();
+            flexInit();
         }
     });
 
 
-    $(document).ready(function() {
-        // Hide address bar on IOs
-        hideBar();
 
-        // Apply background images from data attributes
-        backgoundInit();
-
-        // Portfolio hovers
-        portfolioHovers();
-
-        // Portfolio filters
-        portfolioFilters();
-
-        // Icon hovers
-        iconHovers();
-
-        // setup contact form
-        setupContactForm();
-
-        // creeate twitter feeds
-        createTwitter();
-
-        // Fancybox init
-        fancyboxInit();
-
-    });
-
-$(window).load(function() {
-    // Initallize flexslider
-    flexInit();
-
+function internetExplorerInit(){
     // selector for ie rounded images fallback
     if (window.PIE) {
         $('.img-circle , .flex-control-nav a , .well-package-heading , span.tag').each(function() {
@@ -84,10 +53,11 @@ $(window).load(function() {
         $('#timeline .timeline-item:nth-child(even) .post-arrow').css({'left': 'auto' ,'right': '100%','background-image':'url("images/timeline-arrow-left.png")'});
         $('.thumbnails > .span2:nth-child(2n+1), .thumbnails > .span3:nth-child(4n+1), .thumbnails > .span4:nth-child(3n+1)').css({'margin-left':'0','clear':'both'});
     }
-});
+};
+
 
 function flexInit() {
-    $('.flexslider[id]').each(function() {
+    $('.flexslider[id]').waitUntilExists(function() {
         // We use data atributes on the flexslider items to control the behaviour of the slideshow
         var slider = $(this),
 
